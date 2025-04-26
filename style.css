@@ -4,22 +4,31 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+body{
+    background-color: #FFF9C4;
+}
 
 .home_header{
     padding: 10px;
-    margin: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px solid #9f9f9f;
-    
+    background-color: #cec573;
 }
 
-.header_link{
+.header_links{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
     padding: 0 2rem;
+}
+
+.header_link button{
+    border-radius: 20px;
+    height: 30px;
+    width: 60px;
+    padding: 5px;
 }
 
 .content{
@@ -29,10 +38,102 @@
 }
 
 .content_left{
+    margin: 50px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     margin-top: 40vh;
     height: calc(60vh - 80px);
 
+}
+
+.etc_buttons{
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.etc_buttons button{
+    border-radius: 20px;
+    height: 30px;
+    width: 60px;
+    padding: 5px;
+}
+
+.etc_button_1{
+    background-color:#a8e6cf;
+}
+
+.social_buttons{
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;   
+}
+
+.social_buttons button{
+    display: flex;
+    gap: 5px;   
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #a8e6cf;
+    height: 50px;
+    width: 50px;
+    outline: none;
+    box-shadow: none;
+    background-color: #FFF9C4;
+}
+
+.social_buttons button:hover {
+    transform: scale(1.1); /* botão cresce 10% */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+
+svg{
+    margin-top: 6px;
+    margin-left: 6px;
+    fill:#a8e6cf;
+}
+  
+
+.circle_gradient{/*ficar responsivo mudar o size e o absolute*/
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    z-index: -1;
+    top: 50vh;
+    left: 60vw;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #26c281, transparent 60%),
+                radial-gradient(circle at 70% 70%, #f9f0a1, transparent 60%),
+                radial-gradient(circle at 50% 50%, #c6d400, transparent 60%);
+    background-blend-mode: screen;
+    filter:blur(2px);
+    background-size: 400% 400%;
+    animation: scatterMove 6s ease-in-out infinite alternate;
+    pointer-events: none; /* pra não atrapalhar cliques */
+}
+@keyframes scatterMove {
+    0% {
+        background-position: 30% 30%, 70% 70%, 50% 50%;
+    }
+    50% {
+        background-position: 40% 60%, 60% 40%, 55% 45%;
+    }
+    100% {
+        background-position: 25% 35%, 75% 65%, 45% 55%;
+    }
+}
+
+@media (max-aspect-ratio: 1/2) {
+    .circle_gradient{
+        width: 150vw;
+        height: 150vw;
+        top: 60vh;
+        left: 30vw;
+    }
+    
+    .content_left{
+        margin-left: 0;
+    }
 }
