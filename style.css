@@ -4,16 +4,34 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+.home_p{
+    font-size: 30px
+}
+
+.home_h1{
+    font-size: 80px;
+}
+
 body{
     background-color: #FFF9C4;
 }
 
-.home_header{
+.header{
     padding: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
-    background-color: #cec573;
+    background-color: #7d7d7d1b;
+}
+
+.header a{
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.circuit_img{
+    height: 40px;
 }
 
 .header_links{
@@ -55,13 +73,15 @@ body{
 
 .etc_buttons button{
     border-radius: 20px;
-    height: 30px;
-    width: 60px;
     padding: 5px;
 }
 
 .etc_button_1{
     background-color:#a8e6cf;
+}
+
+.etc_button_2{
+    background-color:#fff27d;
 }
 
 .social_buttons{
@@ -84,7 +104,7 @@ body{
 }
 
 .social_buttons button:hover {
-    transform: scale(1.1); /* botão cresce 10% */
+    transform: scale(1.1);
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
@@ -96,7 +116,7 @@ svg{
 }
   
 
-.circle_gradient{/*ficar responsivo mudar o size e o absolute*/
+.circle_gradient{
     position: fixed;
     width: 100vh;
     height: 100vh;
@@ -136,4 +156,178 @@ svg{
     .content_left{
         margin-left: 0;
     }
+
+    h1{
+        font-size: 32px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .evolution_imgs img{
+        width: 50vw;
+        height: 48vh;
+    }
+}
+
+.abtme_div_img{
+    display: flex;
+    align-items: center;
+}
+
+.abtme_img{
+    width: 90x;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.evolution_imgs{
+    display: flex;
+    flex-direction: column;
+}
+
+.evolution_imgs img{
+    width: 50vw;
+    height: 48vh;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(93, 93, 93);
+    border-radius: 2px;
+}
+
+
+/*Eu sei que eu devia ter feito isso melhor e ainda por cima separado meus styles mas o projeto e pequeno então essa estrutura interna de nomes deve bastar
+Aqui vão ficar as bolinhas pequenas da home page que ocupa mto espaço
+*/
+
+.small_circle_gradient_1{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: -2;
+    top: 30vh;
+    left: 40vw;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #26c281, transparent 60%),
+                radial-gradient(circle at 70% 70%, #f9f0a1, transparent 60%),
+                radial-gradient(circle at 50% 50%, #c6d400, transparent 60%);
+    background-blend-mode: screen;
+    filter:blur(2px);
+    background-size: 400% 400%;
+    animation: scatterMove 6s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+.small_circle_gradient_2{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    z-index: -2;
+    top: 35vh;
+    left: 60vw;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #26c281, transparent 60%),
+                radial-gradient(circle at 70% 70%, #f9f0a1, transparent 60%),
+                radial-gradient(circle at 50% 50%, #c6d400, transparent 60%);
+    background-blend-mode: screen;
+    filter:blur(2px);
+    background-size: 400% 400%;
+    animation: scatterMove 6s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+.small_circle_gradient_3{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    z-index: -2;
+    top: 45vh;
+    left: 35vw;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #26c281, transparent 60%),
+                radial-gradient(circle at 70% 70%, #f9f0a1, transparent 60%),
+                radial-gradient(circle at 50% 50%, #c6d400, transparent 60%);
+    background-blend-mode: screen;
+    filter:blur(2px);
+    background-size: 400% 400%;
+    animation: scatterMove 6s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+.small_circle_gradient_4{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    z-index: -2;
+    top: 55vh;
+    left: 45vw;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #26c281, transparent 60%),
+                radial-gradient(circle at 70% 70%, #f9f0a1, transparent 60%),
+                radial-gradient(circle at 50% 50%, #c6d400, transparent 60%);
+    background-blend-mode: screen;
+    filter:blur(2px);
+    background-size: 400% 400%;
+    animation: scatterMove 6s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+.small_circle_gradient_5{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    z-index: -2;
+    top: 70vh;
+    left: 50vw;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #26c281, transparent 60%),
+                radial-gradient(circle at 70% 70%, #f9f0a1, transparent 60%),
+                radial-gradient(circle at 50% 50%, #c6d400, transparent 60%);
+    background-blend-mode: screen;
+    filter:blur(2px);
+    background-size: 400% 400%;
+    animation: scatterMove 6s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+.small_circle_gradient_6{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    z-index: -2;
+    top: 20vh;
+    left: 53vw;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #26c281, transparent 60%),
+                radial-gradient(circle at 70% 70%, #f9f0a1, transparent 60%),
+                radial-gradient(circle at 50% 50%, #c6d400, transparent 60%);
+    background-blend-mode: screen;
+    filter:blur(2px);
+    background-size: 400% 400%;
+    animation: scatterMove 6s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+.small_circle_gradient_7{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    z-index: -2;
+    top: 85vh;
+    left: 42vw;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #26c281, transparent 60%),
+                radial-gradient(circle at 70% 70%, #f9f0a1, transparent 60%),
+                radial-gradient(circle at 50% 50%, #c6d400, transparent 60%);
+    background-blend-mode: screen;
+    filter:blur(2px);
+    background-size: 400% 400%;
+    animation: scatterMove 6s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+@media (screen) {
+    
 }
