@@ -25,9 +25,13 @@ body{
 }
 
 .header a{
-    background-color: lightgray;
+    background-color: rgba(189, 189, 189, 0.39);
     border-radius: 20px;
-    padding: 5px;
+    padding: 7px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    color: black;
 }
 
 .circuit_img{
@@ -42,13 +46,6 @@ body{
     padding: 0 2rem;
 }
 
-.header_link button{
-    border-radius: 20px;
-    height: 30px;
-    width: 60px;
-    padding: 5px;
-}
-
 .content{
     display: flex;
     flex-direction: row;
@@ -56,7 +53,7 @@ body{
 }
 
 .content_left{
-    margin: 50px;
+    margin-left: 50px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -145,40 +142,20 @@ svg{
     }
 }
 
-@media (max-aspect-ratio: 1/2) {
-    .circle_gradient{
-        width: 150vw;
-        height: 150vw;
-        top: 60vh;
-        left: 30vw;
-    }
-    
-    .content_left{
-        margin-left: 0;
-    }
-
-    h1{
-        font-size: 32px;
-    }
-
-    p{
-        font-size: 16px;
-    }
-
-    .evolution_imgs img{
-        width: 50vw;
-        height: 48vh;
-    }
-}
-
 .abtme_div_img{
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.abtme_textbox p{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .abtme_img{
-    width: 90x;
-    height: 120px;
+    width: 120x;
+    height: 160px;
     border-radius: 5px;
 }
 
@@ -188,8 +165,8 @@ svg{
 }
 
 .evolution_imgs img{
-    width: 50vw;
-    height: 48vh;
+    width: 650px;
+    height: 330px;
     margin-top: 10px;
     border-style: solid;
     border-width: 5px;
@@ -328,6 +305,28 @@ Aqui vão ficar as bolinhas pequenas da home page que ocupa mto espaço
     pointer-events: none;
 }
 
-@media (screen) {
+@media (max-width: 768px) {
+    .circle_gradient{
+        width: 150vw;
+        height: 150vw;
+        top: 60vh;
+        left: 30vw;
+    }
     
+    .content_left{
+        margin-left: 0;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .evolution_imgs img{
+        width: 100vw;
+        height: 40vw;
+    }
 }
